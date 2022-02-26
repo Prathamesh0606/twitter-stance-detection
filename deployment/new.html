@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- 
+  <div
+  class="bg-image"
+  style="
+    background-image: url('farmer.jpg');
+    height: 100vh;
+  "
+> -->
+
+<div class="container" style="max-width: 500px;
+  margin: auto;">
+  <h2>Stance Detection of Farmers Protest tweets</h2>
+
+
+<div class="form-group" style="width:100%; display:flex; justify-content:center">
+
+<script type="text/javascript">
+function countChars(countfrom,displayto) {
+  var text = document.getElementById(displayto);
+  var l1 = parseInt(text, 10);
+  var len = document.getElementById(countfrom).value.length;
+  // len = len.concat(" characters entered.");
+  document.getElementById(displayto).innerHTML = len+" characters entered.";
+}
+</script>
+
+    <textarea id="data" class="form-control input-lg" style="width:500px; display:flex; justify-content:center" 
+     rows="4" type="text" 
+    placeholder="Enter your tweet here.."
+    onkeyup="countChars('data','charcount');" onkeydown="countChars('data','charcount');" onmouseout="countChars('data','charcount');"></textarea><br>
+  </div>
+  
+  <!-- <p style="text-align:justify;">
+    <span>
+      <button type="button" class="btn btn-primary" >Predict my stance</button>
+    </span>
+    &nbsp;&nbsp;&nbsp;
+    <span id="charcount" style="float:right;">
+      0 
+    </span> 
+</p> -->
+
+<p style="text-align:center;">
+  <span>
+  <button type="button" class="btn btn-primary" >Predict my stance</button>
+</span>
+  &nbsp;&nbsp;&nbsp;
+  <span id="charcount" style="float:inline-e;">
+    0
+  </span>
+</p>
+<!-- <button type="button" class="btn btn-primary" >Predict my stance</button>
+<div class="container" style="text-align:right;">
+<span  id="charcount">0</span> characters entered.
+</div> -->
+</div>
+  <!-- </div> -->
+  </body>
+  
+</body>
+</html>
